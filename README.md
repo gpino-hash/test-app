@@ -2,11 +2,11 @@
 
 Esta api fue construida para obtener los datos del clima dependiendo de la ciudad
 
-#### Url de la api: http://test-app.test/api/current?query=<NOMBRE DE LA CIUDAD>
+#### Url de la api: http://test-app.test/api/current?query=NOMBRE DE LA CIUDAD
 
 #### Respuesta:
 
-````
+```
 {
 "current": {
 "is_day": "yes",
@@ -48,6 +48,6 @@ Esta api fue construida para obtener los datos del clima dependiendo de la ciuda
 "localtime_epoch": 1657989720
 }
 }
-````
+```
 
 Nota: Solo tiene para procesar 250 requests al mes ya que es un acceso free
