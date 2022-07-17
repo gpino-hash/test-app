@@ -20,10 +20,10 @@ class WeatherController extends Controller
     }
 
     /**
-     * @param Request $request
+     * @param WeatherRequest $request
      * @return mixed
      */
-    public function show(Request $request): mixed
+    public function show(WeatherRequest $request): mixed
     {
         try {
             return $this->record->create($request->input("query"));

@@ -24,7 +24,7 @@ class WeatherRecord
     {
         $this->weatherDto->getWeatherCity()->setCity($query);
         $weather = $this->repository->search($this->weatherDto->getWeatherCity());
-        return empty($weather) || !now()->isSameHour($weather->created_at)
+        return empty($weather) || !now()->isSameHour($weather->updated_at)
             ? $this->updateOrCreate($this->weatherDto->getWeatherCity())
             : $weather->body;
     }
